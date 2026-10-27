@@ -1,0 +1,26 @@
+name: Leitura
+description: Artigo, documento, vídeo ou livro. As notas vão nos comentários.
+projects: ["AIfactory-Organization/2"]
+body:
+  - type: input
+    id: link
+    attributes:
+      label: Link
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Tipo
+      options:
+        - Artigo
+        - Documento
+        - Vídeo
+        - Livro
+        - Site
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Porquê ler
