@@ -1,0 +1,23 @@
+name: Tarefa
+description: Trabalho a fazer numa das fases do projeto. Depois de criar, escolham a Fase no Project.
+projects: ["AIfactory-Organization/2"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Objetivo
+      description: O que é preciso fazer, em uma ou duas frases.
+    validations:
+      required: true
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Fase
+      options:
+        - "Fase 1: Planeamento"
+        - "Fase 2: Arquitetura"
+        - "Fase 3: Implementação"
+        - "Fase 4: Testes e documentação"
+        - Marcos
+    validations:
+      required: true
